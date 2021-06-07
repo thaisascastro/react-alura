@@ -3,7 +3,7 @@ import FormularioCadastro from "./components/FormularioCadastro";
 import ListaDeNotas from "./components/ListaDeNotas";
 import CardNota from "./components/CardNota";
 
-export default class App extends Component() {
+export default class App extends Component {
   render() {
     return (
       <section>
