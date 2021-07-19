@@ -6,6 +6,7 @@ import "./assets/index.css";
 class App extends Component {
   constructor() {
     super();
+
     this.state = {
       notas: [],
     };
@@ -22,7 +23,6 @@ class App extends Component {
   }
 
   render() {
-    console.log("render");
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)} />
