@@ -3,6 +3,7 @@ import ListaDeNotas from "./components/ListaDeNotas";
 import FormularioCadastro from "./components/FormularioCadastro";
 import "./assets/App.css";
 import "./assets/index.css";
+import ListaDeCategorias from "./components/ListaDeCategorias";
 class App extends Component {
   constructor() {
     super();
@@ -31,10 +32,13 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)} />
-        <ListaDeNotas
-          apagarNota={this.deletarNota.bind(this)}
-          notas={this.state.notas}
-        />
+        <main className="conteudo-principal">
+          <ListaDeCategorias />
+          <ListaDeNotas
+            apagarNota={this.deletarNota.bind(this)}
+            notas={this.state.notas}
+          />
+        </main>
       </section>
     );
   }
