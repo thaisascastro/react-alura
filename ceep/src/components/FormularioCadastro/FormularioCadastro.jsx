@@ -29,6 +29,13 @@ export default class FormularioCadastro extends Component {
       <form className="form-cadastro"
       onSubmit= {this._criarNota.bind(this)}
       >
+        <select className="form-cadastro-input">
+          {this.props.categorias.map(categorias => {
+            return (
+              <option>{categorias}</option>
+            )
+          })}
+        </select>
         <input
           type="text"
           placeholder="Título"
