@@ -18,5 +18,6 @@ export default class Categorias {
 
   adicionarCategorias(novaCategoria) {
     this.categorias.push(novaCategoria);
+    this.notificar();
   }
 }
